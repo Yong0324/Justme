@@ -1,0 +1,22 @@
+#finder 3.0
+dictionary = ['alphabet','umbrella','coding']
+want_to_find = True
+while True:
+    if want_to_find == True:
+        to_type = input('What do you want to find?\n')
+        total = 0
+        for i in dictionary:
+            if i == to_type:
+                total += 1
+        if total == 1:
+            print('The word exists!')
+            want_to_find = False
+        else:
+            print('The word doesn\'t exists.')
+            want_to_find = False
+    else:
+        reply = input('Type \'yes\' to continue find words in the dictionary. \n')
+        if reply == 'yes':
+            want_to_find = True
+        else:
+            break
